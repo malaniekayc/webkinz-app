@@ -1,0 +1,17 @@
+.wk__store-Carousel {
+    width: 560px;
+    margin: auto;
+    height: 345px;
+}
+
+.storeCarouselIndicators {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: rgb(102, 102, 102);
+}
+
+.carousel-indicators button {
+    margin: 0 .5rem;
+    transform: translate(0, 3.25rem);
+}

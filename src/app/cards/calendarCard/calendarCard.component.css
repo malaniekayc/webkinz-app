@@ -1,0 +1,21 @@
+.calendarCard {
+    border-radius: 15px;
+    background: linear-gradient(0deg, #ecebeb, #ffffff);
+    width: 250px;
+    height: 300px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text, .card-link {
+    color: #00CCFF;
+    font-weight: bolder;
+}
+
+.card-body p a {
+    color: #6699CC;
+}
+
