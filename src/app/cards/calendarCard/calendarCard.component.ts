@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: "wk-calendarCard",
@@ -7,5 +7,13 @@ import { Component } from "@angular/core";
 })
 
 export class CalendarCardComponent {
+    @Input() title: string;
+    @Input() date: string;
+    @Input() description: string;
 
+    constructor() {
+        this.title = "Missing Title";
+        this.date = "Missing Date";
+        this.description = "Missing Description";
+    }
 }
