@@ -8,6 +8,16 @@ import { SocialNavBarComponent } from './navigation/socialNavBar.component';
 import { storeCarouselComponent } from './carousel/storeCarousel.component';
 import { CalendarCardComponent } from './cards/calendarCard/calendarCard.component';
 import { NewsCardComponent } from './cards/newsCard/newsCard.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeLayoutComponent } from './layouts/home-layout.component';
+import { ShopLayoutComponent } from './layouts/shop-layout.component';
+import { NewsLayoutComponent } from './layouts/news-layout.component';
+import { HelpLayoutComponent } from './layouts/help-layout.component';
+import { ParentsLayoutComponent } from './layouts/parents-layout.component';
+import { ParentsNavBarComponent } from './navigation/parentsNavBar.component';
+import { ShopNavBarComponent } from './navigation/shopNavBar.component';
+import { NewsNavBarComponent } from './navigation/newsNavBar.component';
+import { HelpNavBarComponent } from './navigation/helpNavBar.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +26,21 @@ import { NewsCardComponent } from './cards/newsCard/newsCard.component';
     SocialNavBarComponent,
     storeCarouselComponent,
     CalendarCardComponent,
-    NewsCardComponent
+    NewsCardComponent,
+    HomeLayoutComponent,
+    ShopLayoutComponent,
+    NewsLayoutComponent,
+    HelpLayoutComponent,
+    ParentsLayoutComponent,
+    ShopNavBarComponent,
+    NewsNavBarComponent,
+    HelpNavBarComponent,
+    ParentsNavBarComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
