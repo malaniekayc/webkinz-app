@@ -8,3 +8,4 @@
 - Created a list for all cards containing three lines of a date, title, and description
 - Added angular routing
 - Added layout components
+- Created 5 new components and a for loop
