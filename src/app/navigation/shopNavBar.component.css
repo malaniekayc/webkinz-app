@@ -1,0 +1,51 @@
+.navbar {
+  background-color: #5693a5 !important;
+  height: 62px;
+  color: white;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  padding-bottom: 7px;
+}
+
+p,
+a {
+  margin: 0;
+  vertical-align: middle;
+  padding: 7px 6px 0px;
+}
+
+.spacer-div {
+  width: 200px;
+}
+
+.wk__search-box {
+  background: white;
+  width: 250px;
+  padding: 0.25rem;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 0.1rem rgb(206, 206, 206));
+}
+
+.wk__search-elements-box {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #909090;
+}
+
+.wk__search {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.wk__right > p {
+  vertical-align: middle;
+}

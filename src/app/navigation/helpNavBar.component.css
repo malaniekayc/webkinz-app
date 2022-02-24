@@ -1,0 +1,44 @@
+.navbar {
+  background: linear-gradient(0deg, #03acdd, #009acb);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  vertical-align: middle;
+  padding: 0.05rem 0;
+  border-bottom: 1px solid #2894bc;
+}
+
+a {
+  font-size: 12px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wk__links {
+  margin-left: 150px;
+}
+
+p {
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.wk__user {
+  margin-right: 200px;
+}
+
+.d-flex > p {
+  padding: 0 0.1rem;
+}
+
+.wk__user-links {
+  text-decoration: none;
+}

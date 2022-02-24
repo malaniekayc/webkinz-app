@@ -18,6 +18,8 @@ import { ParentsNavBarComponent } from './navigation/parentsNavBar.component';
 import { ShopNavBarComponent } from './navigation/shopNavBar.component';
 import { NewsNavBarComponent } from './navigation/newsNavBar.component';
 import { HelpNavBarComponent } from './navigation/helpNavBar.component';
+import { ParentCardComponent } from './cards/parentCard/parentCard.component';
+import { BottomNavComponent } from './navigation/bottom-nav/bottom-nav.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { HelpNavBarComponent } from './navigation/helpNavBar.component';
     ShopNavBarComponent,
     NewsNavBarComponent,
     HelpNavBarComponent,
-    ParentsNavBarComponent
+    ParentsNavBarComponent,
+    ParentCardComponent,
+    BottomNavComponent
   ],
   imports: [
     BrowserModule,

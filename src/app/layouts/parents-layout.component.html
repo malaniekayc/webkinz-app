@@ -1,1 +1,9 @@
+<wk-parentsNavBar>Loading...</wk-parentsNavBar>
+
 <h1>Parents Page</h1>
+
+<div class="container-fluid d-flex justify-content-center w-full px-3">
+    <div *ngFor="let parentCard of parentCards">
+     <wk-parentCard image={{parentCard.image}} title={{parentCard.title}} desc={{parentCard.desc}}>Loading...</wk-parentCard>
+    </div>
+</div>

@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { mockParentCardList } from "../cards/parentCard/mockParentCardList";
+import { ParentCardModel } from "../cards/parentCard/parentCard.model";
 
 @Component({
     selector: 'wk-parents-layout',
@@ -7,5 +9,13 @@ import { Component } from "@angular/core";
 })
 
 export class ParentsLayoutComponent {
+    parentCards: ParentCardModel [] = [];
+
+    constructor() {
+        for (var parentCard of mockParentCardList) {
+            console.log(parentCard);
+            this.parentCards.push(parentCard);
+        }
+    }
 
 }

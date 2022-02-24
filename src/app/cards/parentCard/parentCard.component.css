@@ -1,0 +1,29 @@
+.card {
+  width: 260px;
+  height: 445px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.wk__title {
+  width: 146px;
+  height: 67px;
+  transform: translateY(-17px);
+}
+
+.wk__image {
+  width: 210px;
+  height: 122px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 14px;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+.card-body {
+  padding: 1rem;
+}
