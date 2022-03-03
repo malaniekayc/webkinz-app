@@ -20,6 +20,8 @@ import { NewsNavBarComponent } from './navigation/newsNavBar.component';
 import { HelpNavBarComponent } from './navigation/helpNavBar.component';
 import { ParentCardComponent } from './cards/parentCard/parentCard.component';
 import { BottomNavComponent } from './navigation/bottom-nav/bottom-nav.component';
+import { UserInfoHttpComponent } from './user-info-http/user-info-http.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,14 @@ import { BottomNavComponent } from './navigation/bottom-nav/bottom-nav.component
     HelpNavBarComponent,
     ParentsNavBarComponent,
     ParentCardComponent,
-    BottomNavComponent
+    BottomNavComponent,
+    UserInfoHttpComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

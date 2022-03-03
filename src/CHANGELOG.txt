@@ -9,3 +9,5 @@
 - Added angular routing
 - Added layout components
 - Created 5 new components and a for loop
+- Created a database
+- Created a new component to display requested data from database
