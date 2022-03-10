@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { mockParentCardList } from "../cards/parentCard/mockParentCardList";
 import { ParentCardModel } from "../cards/parentCard/parentCard.model";
+import { ParentCardService } from "../cards/parentCard/parentCard.service";
 
 @Component({
     selector: 'wk-parents-layout',
@@ -11,11 +12,15 @@ import { ParentCardModel } from "../cards/parentCard/parentCard.model";
 export class ParentsLayoutComponent {
     parentCards: ParentCardModel [] = [];
 
-    constructor() {
-        for (var parentCard of mockParentCardList) {
-            console.log(parentCard);
-            this.parentCards.push(parentCard);
-        }
+    constructor(
+        private parentCardService: ParentCardService
+    ){}
+    
+    ngOnInit(): void {
+        this.parentCardService.getParentCards().subscribe((data) => {
+            for (var parentCard of data) {
+                this.parentCards.push(parentCard);
+            }
+        })
     }
-
 }

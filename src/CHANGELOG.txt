@@ -11,3 +11,5 @@
 - Created 5 new components and a for loop
 - Created a database
 - Created a new component to display requested data from database
+- Changed parentCard and calendarCard to retrieve data from backend instead of mocklists
+- Created a service for parentCard and calendarCard to handle retrieving the data

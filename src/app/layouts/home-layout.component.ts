@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { CalendarCardModel } from "../cards/calendarCard/calendarCard.model";
-import { mock_calendarCard_list } from '../cards/calendarCard/mock_calendarCard_list';
+import { CalendarCardService } from "../cards/calendarCard/calendarCards.service";
 
 @Component ({
     selector: 'wk-home-layout',
@@ -10,11 +10,18 @@ import { mock_calendarCard_list } from '../cards/calendarCard/mock_calendarCard_
 export class HomeLayoutComponent {
     calendarCards: CalendarCardModel [] = [];
 
-  constructor() {
-    for (var calendarCard of mock_calendarCard_list) {
-      console.log(calendarCard);
-      this.calendarCards.push(calendarCard);
-    }
+  constructor( 
+    private calendarCardService: CalendarCardService,
+  )
+  {}
+
+  ngOnInit(): void {
+    this.calendarCardService.getCalendarCards().subscribe((data) => {
+      console.log(data);
+      for (var calendarCard of data) {
+        this.calendarCards.push(calendarCard);
+      }
+    })
   }
 
 }
