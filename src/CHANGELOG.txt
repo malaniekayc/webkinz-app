@@ -13,3 +13,5 @@
 - Created a new component to display requested data from database
 - Changed parentCard and calendarCard to retrieve data from backend instead of mocklists
 - Created a service for parentCard and calendarCard to handle retrieving the data
+- Switched to AngularFire Library from HTTPClient for calendarCard and parentCard
+- Deployed webapp

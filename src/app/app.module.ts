@@ -22,6 +22,11 @@ import { ParentCardComponent } from './cards/parentCard/parentCard.component';
 import { BottomNavComponent } from './navigation/bottom-nav/bottom-nav.component';
 import { UserInfoHttpComponent } from './user-info-http/user-info-http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [
@@ -48,7 +53,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

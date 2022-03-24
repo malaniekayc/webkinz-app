@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/webkinz-malanie-cline",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

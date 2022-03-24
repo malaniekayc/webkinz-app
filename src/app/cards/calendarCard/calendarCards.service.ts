@@ -1,19 +1,16 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { CalendarCardModel } from "./calendarCard.model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
     providedIn: 'root'
 })
 export class CalendarCardService {
-    private baseUrl:string = 'https://webkins-app-mkc-default-rtdb.firebaseio.com/';
-    private calendarCardsEndPoint:string = 'calendarCards.json';
 
-    constructor(private http: HttpClient) {
-
+    constructor(private db:AngularFireDatabase) {
     }
 
     public getCalendarCards() {
-        return this.http.get<CalendarCardModel[]>(this.baseUrl + this.calendarCardsEndPoint);
+        return this.db.list<CalendarCardModel>("calendarCards").valueChanges();
     }
 }
