@@ -15,3 +15,6 @@
 - Created a service for parentCard and calendarCard to handle retrieving the data
 - Switched to AngularFire Library from HTTPClient for calendarCard and parentCard
 - Deployed webapp
+- added admin page to add more calendar cards
+- linked database to push form info directly to db
+- automatically updates page calendarCards are on

@@ -13,4 +13,8 @@ export class CalendarCardService {
     public getCalendarCards() {
         return this.db.list<CalendarCardModel>("calendarCards").valueChanges();
     }
+
+    public addEvent(event: CalendarCardModel){
+        this.db.list<CalendarCardModel>("calendarCards").push(event)
+    }
 }

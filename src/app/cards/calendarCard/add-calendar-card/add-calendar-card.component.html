@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row"><div class="col-8">
+        <form #addEventForm="ngForm" (ngSubmit)="addEvent(addEventForm.value)">
+            <div class="input-group">
+                <span class="input-group-text">Date:</span>
+                <input type="text" class="form-control" ngModel name="date">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Title:</span>
+                <input type="text" class="form-control" ngModel name="title">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Description:</span>
+                <input type="text" class="form-control" ngModel name="description">
+            </div>
+            <button type="submit" class="btn mt-3" [disabled]="!addEventForm.valid">Add Event</button>
+        </form>
+    </div></div>
+</div>
