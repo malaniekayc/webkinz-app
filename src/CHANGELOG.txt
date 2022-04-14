@@ -18,3 +18,4 @@
 - added admin page to add more calendar cards
 - linked database to push form info directly to db
 - automatically updates page calendarCards are on
+- added user authentication
