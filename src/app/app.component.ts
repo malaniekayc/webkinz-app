@@ -12,9 +12,6 @@ export class AppComponent {
   calendarCards: CalendarCardModel [] = [];
 
   constructor() {
-    // for (var calendarCard of mock_calendarCard_list) {
-    //   console.log(calendarCard);
-    //   this.calendarCards.push(calendarCard);
-    // }
+    
   }
 }
