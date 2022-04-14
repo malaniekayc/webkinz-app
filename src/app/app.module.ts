@@ -29,6 +29,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddCalendarCardComponent } from './cards/calendarCard/add-calendar-card/add-calendar-card.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FormsModule } from '@angular/forms';
     ParentCardComponent,
     BottomNavComponent,
     UserInfoHttpComponent,
-    AddCalendarCardComponent
+    AddCalendarCardComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,

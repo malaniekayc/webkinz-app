@@ -7,6 +7,7 @@ import { NewsLayoutComponent } from './layouts/news-layout.component';
 import { HelpLayoutComponent } from './layouts/help-layout.component';
 import { ParentsLayoutComponent } from './layouts/parents-layout.component';
 import { AddCalendarCardComponent } from './cards/calendarCard/add-calendar-card/add-calendar-card.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes:Routes = [
   {
@@ -26,7 +27,10 @@ const routes:Routes = [
   },
   {
     path: 'admin', component: AddCalendarCardComponent
-  }
+  },
+  {
+    path: 'auth', component: AuthenticationComponent
+  },
 ];
 
 @NgModule({
